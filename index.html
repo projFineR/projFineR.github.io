@@ -347,14 +347,33 @@
     <!-- Method. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Method</h2>
+        <h2 class="title is-3">FineR Method</h2>
 
-        <!-- Overview. -->
-        <h3 class="title is-4">FineR overview</h3>
+        <!-- Problem. -->
+        <h3 class="title is-4">Problem Formulation</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            Our goal is to discover and recognize fine-grained categories using unlabelled images without having access
+            to expert annotations and the ground-truth categories that exist in the incoming images. Thus, the
+            challenges in such a FGVR task are to first identify (or discover) the classes that exist in the unlabelled
+            images from few observation and then assign a class name to each incoming instance.
+          </p>
+        </div>
+        <!-- Problem. -->
+
+        <!-- Overview. -->
+        <h3 class="title is-4">FineR System Overview</h3>
+        <div class="content has-text-justified">
+          <p>
+            The idea underpinning our proposed FineR system is that LLMs, which already encode the world knowledge about
+            fine-grained categories such as species of animals and plants, can be leveraged to reason about candidate
+            class names. Subsequently, the discovered candidate class names and images are used to yield a multi-modal
+            classifier to classify a test instance using a VLM (such as CLIP).
+          </p>
+          <p>
+            FineR operates in three phases: (i) Translating Useful Visual Information from Visual to Textual Modality;
+            (ii) Fine-grained Semantic Category Reasoning in Language; and (iii) Multi-modal Classifier Construction.
+            An overview of FineR system is shown below.
           </p>
         </div>
 
@@ -363,39 +382,39 @@
         </div>
         <!-- Overview. -->
 
-        <!-- Example. -->
-        <h3 class="title is-4">How FineR works</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Example. -->
+<!--        &lt;!&ndash; Example. &ndash;&gt;-->
+<!--        <h3 class="title is-4">How FineR works</h3>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            We can also animate the scene by interpolating the deformation latent codes of two input-->
+<!--            frames. Use the slider here to linearly interpolate between the left frame and the right-->
+<!--            frame.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="columns is-vcentered interpolation-panel">-->
+<!--          <div class="column is-3 has-text-centered">-->
+<!--            <img src="./static/images/interpolate_start.jpg"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--            <p>Start Frame</p>-->
+<!--          </div>-->
+<!--          <div class="column interpolation-video-column">-->
+<!--            <div id="interpolation-image-wrapper">-->
+<!--              Loading...-->
+<!--            </div>-->
+<!--            <input class="slider is-fullwidth is-large is-info"-->
+<!--                   id="interpolation-slider"-->
+<!--                   step="1" min="0" max="100" value="0" type="range">-->
+<!--          </div>-->
+<!--          <div class="column is-3 has-text-centered">-->
+<!--            <img src="./static/images/interpolate_end.jpg"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolation end reference image."/>-->
+<!--            <p class="is-bold">End Frame</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <br/>-->
+<!--        &lt;!&ndash;/ Example. &ndash;&gt;-->
       </div>
     </div>
     <!--/ Method. -->
@@ -405,14 +424,27 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Experimental Results</h2>
 
+        <!-- Metrics. -->
+        <h3 class="title is-4">Evaluation Metrics</h3>
+          <div class="content has-text-justified">
+            <p>
+              We employ two synergistic metrics: <b>Clustering Accuracy (cACC)</b> and <b>Semantic Similarity (sACC)</b>.
+              cACC evaluates the model's performance in clustering images from the same category together, but does not
+              consider the semantics of the cluster labels. This gap is filled by sACC, which leverages Sentence-BERT
+              to compare the semantic similarity of the cluster's assigned name with the ground-truth category.
+            </p>
+          </div>
+          <!-- Metrics -->
+
         <!-- Five FGVR Datasets. -->
         <h3 class="title is-4">Benchmarking on Fine-grained Datasets</h3>
           <!-- Quantitative I. -->
-          <h4 class="title is-5">Quantitative comparison I: The battle of machine-driven approaches</h4>
+          <h4 class="title is-5">Quantitative Comparison I: The Battle of Machine-driven Approaches</h4>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              We benchmarked our FineR system with constructed baseline and SOTA methods for the task of FGVR without
+              expert knowledge on the five-grained datasets, including Caltech-UCSD Bird-200, Stanford Car-196 and
+              Dog-120, Flower-102, and Oxford-IIIT Pet-37.
             </p>
           </div>
 
@@ -425,11 +457,12 @@
           <!-- Quantitative I. -->
 
           <!-- Quantitative II. -->
-          <h4 class="title is-5">Quantitative comparison II: From layperson to expert - where do we stand?</h4>
+          <h4 class="title is-5">Quantitative Comparison II: From Layperson to Expert - Where Do We Stand?</h4>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              Echoing with our initial motivation of democratizing FGVR, we conducted a human study to establish
+              layperson-level baselines on the Car-196 and Pet-37 datasets, while the ground-truth class names are
+              considered as expert-level baseline (or upper bound).
             </p>
           </div>
 
@@ -439,11 +472,10 @@
           <!-- Quantitative II. -->
 
           <!-- Qualitative. -->
-          <h4 class="title is-5">Qualitative comparison</h4>
+          <h4 class="title is-5">Qualitative Comparison</h4>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              We visualize and analyze the predictions of our FineR system and the compared methods.
             </p>
           </div>
 
@@ -468,8 +500,11 @@
         <h3 class="title is-4">Benchmarking on the Novel Pokemon Dataset</h3>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              To further investigate the FGVR capability of FineR on more novel concepts, we introduce a new
+              Pokemon dataset comprised of 10 Pokemon characters, sourced from
+              <a href="https://www.pokemon.com/us/pokedex">Pokedex</a> and Google Image Search. In stark contrast to the
+              compared methods, FineR successfully discovers 7/10 ground-truth Pokemon categories, nearly reaching the
+              upper bound performance.
             </p>
           </div>
 
@@ -482,8 +517,15 @@
         <h3 class="title is-4">The Story of Blackberry Lily - A Reverse Comparison</h3>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              Reverse comparison of prediction results for the"Blackberry Lily" image (upper-left corner) in Flower-102.
+              We evaluate the visual counterparts associated with the predicted semantic concepts. To conduct this
+              comparison, we employ two distinct methods for inversely identifying their visual counterparts:
+              (i) Google Image Search: we query and fetch images that are paired with the predicted class names from
+              Google; (ii) Stable Diffusion: we utilize the predicted semantic class names as text prompts to generate
+              semantically-conditioned images using Stable Diffusion. Partially correct and wrong predictions are color
+              coded. None of the methods correctly predict the ground-truth label. However, the visual counterparts
+              reversely predicted by FineR is extremely similar to the ground-truth ones, because it captures the
+              useful semantic "Orange-spotted".
             </p>
           </div>
 
@@ -496,8 +538,7 @@
         <h3 class="title is-4">Ablation Study</h3>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              We conducted an ablation analysis of the main components of the proposed FineR system.
             </p>
           </div>
 
@@ -509,11 +550,10 @@
         <!-- Sensitivity. -->
         <h3 class="title is-4">Sensitivity Analysis</h3>
           <!-- Alpha. -->
-          <h4 class="title is-5">Analysis of the Hyperparameter Alpha</h4>
+          <h4 class="title is-5">Analysis of the Hyperparameter &alpha;</h4>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              We explore the impact of the hyperparameter &alpha; on multi-modal fusion during classifier construction.
             </p>
           </div>
 
@@ -526,8 +566,8 @@
           <h4 class="title is-5">Analysis of the Hyperparameter K</h4>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              Additionally, we examine the effects of sample augmentation times K in mitigating visual bias due to
+              limited sample sizes.
             </p>
           </div>
 
@@ -536,13 +576,26 @@
           </div>
           <!-- K.-->
 
+          <!-- Number of Images for Discovery. -->
+          <h4 class="title is-5">Analysis of the Number of Unlabeled Images Used for Class Name Discovery</h4>
+          <div class="content has-text-justified">
+            <p>
+              We also analyze the system’s performance under varying amounts of unlabeled images per category for class
+              name discovery.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/experiments/study_discover_images.png" class="center"/></img>
+          </div>
+          <!-- Number of Images for Discovery. -->
 
           <!-- VLM Model Size. -->
           <h4 class="title is-5">Analysis of VLM Model Size</h4>
           <div class="content has-text-justified">
             <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
+              Finally, we assess the influence of CLIP VLM model size on our system performance, which shows FineR can
+              be scaled by larger models.
             </p>
           </div>
 
@@ -551,19 +604,7 @@
           </div>
           <!-- VLM Model Size. -->
 
-          <!-- Number of Images for Discovery. -->
-          <h4 class="title is-5">Analysis of the Number of Unlabeled Images Used for Class Name Discovery</h4>
-          <div class="content has-text-justified">
-            <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
-            </p>
-          </div>
 
-          <div class="content has-text-centered">
-             <img src="static/images/experiments/study_discover_images.png" class="center"/></img>
-          </div>
-          <!-- Number of Images for Discovery. -->
         <!-- Sensitivity. -->
 
       </div>
