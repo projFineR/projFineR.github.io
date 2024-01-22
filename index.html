@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/logo.png">
+  <link rel="icon" href="./static/images/icons/logo2.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,85 +42,123 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
+<!--<nav class="navbar" role="navigation" aria-label="main navigation">-->
+<!--  <div class="navbar-brand">-->
+<!--    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">-->
+<!--      <span aria-hidden="true"></span>-->
+<!--      <span aria-hidden="true"></span>-->
+<!--      <span aria-hidden="true"></span>-->
+<!--    </a>-->
+<!--  </div>-->
+<!--  <div class="navbar-menu">-->
+<!--    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">-->
+<!--      <a class="navbar-item" href="https://oatmealliu.github.io/">-->
+<!--      <span class="icon">-->
+<!--          <i class="fas fa-home"></i> <b>         FineR</b>-->
+<!--      </span>-->
+<!--      </a>-->
+<!--&lt;!&ndash;      <div class="navbar-item has-dropdown is-hoverable">&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="navbar-link">&ndash;&gt;-->
+<!--&lt;!&ndash;          More Research&ndash;&gt;-->
+<!--&lt;!&ndash;        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="navbar-dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a class="navbar-item" href="https://hypernerf.github.io">&ndash;&gt;-->
+<!--&lt;!&ndash;            HyperNeRF&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;          <a class="navbar-item" href="https://nerfies.github.io">&ndash;&gt;-->
+<!--&lt;!&ndash;            Nerfies&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;          <a class="navbar-item" href="https://latentfusion.github.io">&ndash;&gt;-->
+<!--&lt;!&ndash;            LatentFusion&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;          <a class="navbar-item" href="https://photoshape.github.io">&ndash;&gt;-->
+<!--&lt;!&ndash;            PhotoShape&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--    </div>-->
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
+<!--  </div>-->
+<!--</nav>-->
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <img src="static/images/icons/logo.png" style="horiz-align: center; vertical-align: sub" width="380" height="380">
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Motivation</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="content has-text-justified">
+            <p>
+              Let's imagine a case. A passionate bird enthusiast encountered a unique challenge when collecting several
+              unlabeled images from a webcam located in the Amazon jungle. Tasked with identifying the diverse bird
+              species within these images, the enthusiast faced a daunting task, especially without any prior knowledge
+              of species names typically provided by ornithologists.
+            </p>
+            <p>
+              To address this complex challenge, we introduce the <b>FineR</b> system. This novel solution empowers the
+              bird lover to not only identify but also effectively classify the various bird species captured in the
+              ongoing webcam feed. <b>FineR</b> is designed to democratize FGVR, freeing the dependence on
+              specialized expert knowledge.
+            </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-
+    <!--/ Matting. -->
   </div>
-</nav>
-
+</section>
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Democratizing Fine-grained Visual Recognition with Large Language Models</h1>
+<!--          <h1 class="title is-1 publication-title"><img src="static/images/icons/logo.png" style="horiz-align: center; vertical-align: sub" width="256" height="256"></h1>-->
+          <h1 class="title is-2 publication-title">Democratizing Fine-grained Visual Recognition with Large Language Models</h1>
+          <h2 class="title is-3 publication-title">ICLR 2024</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://oatmealliu.github.io/">Mingxuan Liu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://roysubhankar.github.io/">Subhankar Roy</a><sup>4</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=uBjSytAAAAAJ&hl=en">Wenjing Li</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://zhunzhong.site/">Zhun Zhong</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en">Nicu Sebe</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://scholar.google.ca/citations?user=xf1T870AAAAJ&hl=en">Elisa Ricci</a><sup>1,2</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>University of Trento</span>,
+            <span class="author-block"><sup>2</sup>Fondazione Bruno Kessler</span>,
+            <span class="author-block"><sup>3</sup>University of Nottingham</span>,
+            <span class="author-block"><sup>4</sup>University of Aberdeen</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://openreview.net/forum?id=c7DND1iIgb"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +167,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://openreview.net/forum?id=c7DND1iIgb"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -137,35 +175,36 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/OatmealLiu/FineR"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://github.com/OatmealLiu/FineR"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Data (coming soon)</span>
                   </a>
+              </span>
+              <!-- Video Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-youtube"></i>-->
+<!--                  </span>-->
+<!--                  <span>Video</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <!-- Code Link. -->
             </div>
 
           </div>
@@ -178,76 +217,79 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <h2 class="subtitle has-text-centered">
+        <div class="content has-text-justified">
+        <span class="dnerf"><b>TL;DR:</b></span>
+        We propose <b>F</b>ine-gra<b>i</b>ned Sema<b>n</b>tic Cat<b>e</b>gory <b>R</b>easoning (<b>FineR</b>) system to address fine-grained visual recognition
+        without needing expert annotations and knowing category names as a-priori.
+        <b>FineR</b> leverages large language models to identify fine-grained image categories by interpreting visual
+        attributes as text. This allows it to reason about subtle differences between species or objects, outperforming
+        current FGVR methods.
+        </div>
       </h2>
+      <img src="static/images/teaser_finer.png" class="center"/></img>
+<!--      <br><br>-->
+
     </div>
   </div>
 </section>
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--<section class="hero is-light is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-steve">-->
+<!--          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/steve.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-chair-tp">-->
+<!--          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/chair-tp.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-shiba">-->
+<!--          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/shiba.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-fullbody">-->
+<!--          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/fullbody.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-blueshirt">-->
+<!--          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/blueshirt.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-mask">-->
+<!--          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/mask.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-coffee">-->
+<!--          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/coffee.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-toby">-->
+<!--          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/toby2.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 
 <section class="section">
@@ -258,31 +300,24 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Identifying subordinate-level categories from images is a longstanding task in computer vision and is referred
+            to as fine-grained visual recognition (FGVR). It has tremendous significance in real-world applications since an
+            average layperson does not excel at differentiating species of birds or mushrooms due to subtle differences
+            among the species. A major bottleneck in developing FGVR systems is caused by the need of high-quality paired
+            expert annotations.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To circumvent the need of expert knowledge we propose
+            <b>F</b>ine-gra<b>i</b>ned Sema<b>n</b>tic Cat<b>e</b>gory <b>R</b>easoning (<b>FineR</b>)
+            that internally leverages the world knowledge of large language models (LLMs) as a proxy in order to
+            reason about fine-grained category names. In detail, to bridge the modality gap between images and LLM, we
+            extract part-level visual attributes from images as text and feed that information to a LLM. Based on the
+            visual attributes and its internal world knowledge the LLM reasons about the subordinate-level category
+            names.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Our training-free <b>FineR</b> outperforms several state-of-the-art FGVR and language and vision assistant models
+            and shows promise in working in the wild and in new domains where gathering expert annotation is arduous.
           </p>
         </div>
       </div>
@@ -290,15 +325,15 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+<!--        <h2 class="title is-3">Video</h2>-->
+<!--        <div class="publication-video">-->
+<!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
+<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -306,52 +341,27 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
+    <!-- Method. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Method</h2>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <!-- Overview. -->
+        <h3 class="title is-4">FineR overview</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations.
+          </p>
+        </div>
+
+        <div class="content has-text-centered">
+           <img src="static/images/framework_finer.png" class="center"/></img>
+        </div>
+        <!-- Overview. -->
+
+        <!-- Example. -->
+        <h3 class="title is-4">How FineR works</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -382,60 +392,167 @@
           </div>
         </div>
         <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
+        <!--/ Example. -->
       </div>
     </div>
-    <!--/ Animation. -->
+    <!--/ Method. -->
 
-
-    <!-- Concurrent Work. -->
+    <!-- Experiments. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+        <h2 class="title is-3">Experimental Results</h2>
 
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
+        <!-- Five FGVR Datasets. -->
+        <h3 class="title is-4">Benchmarking on Fine-grained Datasets</h3>
+          <!-- Quantitative I. -->
+          <h4 class="title is-5">Quantitative comparison I: The battle of machine-driven approaches</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- Quantitative I. -->
+
+          <!-- Quantitative II. -->
+          <h4 class="title is-5">Quantitative comparison II: From layperson to expert - where do we stand?</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- Quantitative II. -->
+
+          <!-- Qualitative. -->
+          <h4 class="title is-5">Qualitative comparison</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- Qualitative.-->
+        <!-- Five FGVR Datasets. -->
+
+
+        <!-- Pokemon Dataset. -->
+        <h3 class="title is-4">Benchmarking on the Novel Pokemon Dataset</h3>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+        <!-- Pokemon Dataset. -->
+
+        <!-- Reverse Comparison. -->
+        <h3 class="title is-4">The Story of Blackberry Lily - A Reverse Comparison</h3>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+        <!-- Reverse Comparison. -->
+
+        <!-- Ablation. -->
+        <h3 class="title is-4">Ablation Study</h3>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+        <!-- Ablation. -->
+
+        <!-- Sensitivity. -->
+        <h3 class="title is-4">Sensitivity Analysis</h3>
+          <!-- Alpha. -->
+          <h4 class="title is-5">Analysis of the Hyperparameter Alpha</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- Alpha.-->
+
+          <!-- K. -->
+          <h4 class="title is-5">Analysis of the Hyperparameter K</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- K.-->
+
+
+          <!-- VLM Model Size. -->
+          <h4 class="title is-5">Analysis of VLM Model Size</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- VLM Model Size. -->
+
+          <!-- Number of Images for Discovery. -->
+          <h4 class="title is-5">Analysis of the Number of Unlabeled Images Used for Class Name Discovery</h4>
+          <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div>
+
+          <div class="content has-text-centered">
+             <img src="static/images/framework_finer.png" class="center"/></img>
+          </div>
+          <!-- Number of Images for Discovery. -->
+        <!-- Sensitivity. -->
+
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+    <!--/ Experiments. -->
 
   </div>
 </section>
@@ -444,11 +561,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{liu2024finer,
+  author    = {Liu, Mingxuan and Roy, Subhankar and Li, Wenjing and Zhong, Zhun and Sebe, Nicu and Ricci, Elisa},
+  title     = {Democratizing Fine-grained Visual Recognition with Large Language Models},
+  journal   = {ICLR},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
@@ -458,10 +575,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="https://openreview.net/forum?id=c7DND1iIgb">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/OatmealLiu" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
