@@ -1,5 +1,4 @@
-# Nerfies
-Democratizing Fine-grained Visual Recognition with Large Language Models
+# Democratizing Fine-grained Visual Recognition with Large Language Models
 
 This is the repository that contains source code for the paper [Democratizing Fine-grained Visual Recognition with Large Language Models](https://projfiner.github.io/).
 
